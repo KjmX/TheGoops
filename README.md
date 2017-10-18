@@ -57,3 +57,8 @@ Enemies come from the left side to try to make goop fall. A canon is there to ki
 The keys “Z” and “S” help to position the canon and the “D” key to send a bullet... once again the player has to be careful, a wrong shot can break everything.
 
 It’s all about reaching the highest score, players get more attached to the game as more as they play it!
+
+Third party libraries
+==================
+* Box2D physics engine (Copyright © 2006-2007 [Erin Catto](https://github.com/hecht-software/box2dweb))
+* Stats a javascript performance monitor (Copyright © [mrdoob](https://github.com/mrdoob/stats.js/))
