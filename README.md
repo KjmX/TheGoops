@@ -36,7 +36,8 @@ And he’s going to needs help to fight the monsters who are going to find him s
 
 How to play Survival mode
 ===========
-[[ https://github.com/KjmX/TheGoops/blob/master/screenshots/SurvivalGamePlay2.png | height = 100px ]]
+ <div style="text-align: center;"><img src="https://github.com/KjmX/TheGoops/blob/master/screenshots/SurvivalGamePlay2.png | height = 100px" width="422" height="281"></div>
+
 Goop is the kind of games that has a very simple concept but that makes you so addicted that you can’t stop playing once you tried it once.
 
 The rules are very simple, the big aim of the game is to make Goop (the main character) jump as high as possible in the sky. (Until he reaches the moon, but no one can really does that :D)
