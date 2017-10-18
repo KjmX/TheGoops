@@ -6,11 +6,6 @@ Designer: FERG Mohamed Amine
 
 Oops Team © 2013
 
-Screenshots
-===========
-![](https://github.com/KjmX/TheGoops/blob/master/screenshots/AdventureGamePlay2.png =319x81)
-![](https://github.com/KjmX/TheGoops/blob/master/screenshots/AdventureGamePlayClear(BadDesign).png =322x80)
-
 Goop's Story
 ============
 In a far away galaxy lived the Goops in a small planet with no moons, those small cute creatures lived in peace, they had a very easy way of living, they found food easily in nature and they had caves as shelters, they lived smiling all day long. Their planet was very rich in natural recourses but they never knew how to use it.
@@ -41,6 +36,7 @@ And he’s going to needs help to fight the monsters who are going to find him s
 
 How to play Survival mode
 ===========
+[[ https://github.com/KjmX/TheGoops/blob/master/screenshots/SurvivalGamePlay2.png | height = 100px ]]
 Goop is the kind of games that has a very simple concept but that makes you so addicted that you can’t stop playing once you tried it once.
 
 The rules are very simple, the big aim of the game is to make Goop (the main character) jump as high as possible in the sky. (Until he reaches the moon, but no one can really does that :D)
