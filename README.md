@@ -36,7 +36,9 @@ And he’s going to needs help to fight the monsters who are going to find him s
 
 How to play Survival mode
 ===========
- <div style="text-align: center;"><img src="https://github.com/KjmX/TheGoops/blob/master/screenshots/SurvivalGamePlay2.png | height = 100px" width="422" height="281"></div>
+<p align="center">
+    <img src="https://github.com/KjmX/TheGoops/blob/master/screenshots/SurvivalGamePlay2.png" width="422" height="281">
+</p>
 
 Goop is the kind of games that has a very simple concept but that makes you so addicted that you can’t stop playing once you tried it once.
 
