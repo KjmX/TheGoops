@@ -1,8 +1,8 @@
 Authors
 =======
-Engine/Game programmer: KEDJOUR Mohamed Tahar
+Engine/Game programmer: **KEDJOUR Mohamed Tahar**
 
-Designer: FERG Mohamed Amine
+Designer: **FERG Mohamed Amine**
 
 Oops Team © 2013
 
@@ -60,5 +60,5 @@ It’s all about reaching the highest score, players get more attached to the ga
 
 Third party libraries
 ==================
-* Box2D physics engine (Copyright © 2006-2007 [Erin Catto](https://github.com/hecht-software/box2dweb))
-* Stats a javascript performance monitor (Copyright © [mrdoob](https://github.com/mrdoob/stats.js/))
+* **Box2D** physics engine (Copyright © 2006-2007 [Erin Catto](https://github.com/hecht-software/box2dweb))
+* **Stats** a javascript performance monitor (Copyright © [mrdoob](https://github.com/mrdoob/stats.js/))
