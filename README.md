@@ -8,8 +8,8 @@ Oops Team © 2013
 
 Screenshots
 ===========
-![Alt text](https://github.com/KjmX/TheGoops/blob/master/screenshots/AdventureGamePlay2.png =319x81)
-![Alt text](https://github.com/KjmX/TheGoops/blob/master/screenshots/AdventureGamePlayClear(BadDesign).png =322x80)
+![](https://github.com/KjmX/TheGoops/blob/master/screenshots/AdventureGamePlay2.png =319x81)
+![](https://github.com/KjmX/TheGoops/blob/master/screenshots/AdventureGamePlayClear(BadDesign).png =322x80)
 
 Goop's Story
 ============
