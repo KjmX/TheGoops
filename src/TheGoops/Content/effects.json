@@ -1,0 +1,22 @@
+[
+    {
+      "texture": "lo7a01.png",
+      "name": "Brick",
+      "width": 100,
+      "height": 30,
+      "fn": 3,
+      "fps": 10,
+      "frames": {"move": [1, 2, 3]},
+      "speed": 2
+    },
+    {
+    "texture": "SmokeWhite.png",
+    "name": "SmokeWhite",
+    "width": 100,
+    "height": 100,
+    "fn": 10,
+    "fps": 30,
+    "frames": [],
+    "speed": 10
+  }
+]

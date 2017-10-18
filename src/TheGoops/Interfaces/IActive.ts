@@ -1,0 +1,3 @@
+interface IActive {
+    kill(): void;
+}

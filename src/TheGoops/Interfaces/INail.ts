@@ -1,0 +1,3 @@
+interface INail {
+    onHammer(): void;
+}

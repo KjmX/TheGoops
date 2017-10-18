@@ -1,0 +1,3 @@
+interface IGameComponent {
+    Initialize(): void;
+}

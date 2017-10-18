@@ -1,0 +1,26 @@
+{
+  "lvl-1":[
+		{
+      "texture": "darthvader.png",
+	  "name": "Golbez",
+	  "width": 32,
+	  "height": 48,
+	  "fn": 16,
+	  "fps": 10,
+	  "frames": { "move": [9, 10, 11, 12] },
+	  "chance": 0.25
+    }
+	],
+	"lvl-2":[
+	{
+	 "texture": "vsurfer.png",
+	 "name": "VSurfer",
+	 "width": 45,
+	 "height": 60,
+	 "fn": 1,
+	 "fps": 10,
+	 "chance": 0.25,
+	 "frames": []
+	}
+	]
+}

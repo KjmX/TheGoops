@@ -1,0 +1,22 @@
+[
+  {
+    "texture": "redBon.png",
+    "name": "Bonus",
+    "width": 60,
+    "height": 60,
+    "type": "JumpBonus",
+    "fn": 10,
+    "fps": 35,
+    "frames": []
+  },
+  {
+    "texture": "blueBon.png",
+    "name": "Bonus",
+    "width": 60,
+    "height": 60,
+    "type": "BrickProtectionBonus",
+    "fn": 10,
+    "fps": 35,
+    "frames": []
+  }
+]

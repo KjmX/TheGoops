@@ -1,0 +1,126 @@
+﻿{
+	"lvl-1": [
+    {
+      "texture": "lo7a01.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 30,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": {"move": [1, 2, 3]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c1.png",
+	  "name": "Cloud",
+	  "width": 100,
+	  "height": 21,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c2.png",
+	  "name": "Cloud",
+	  "width": 75,
+	  "height": 16,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c3.png",
+	  "name": "Cloud",
+	  "width": 150,
+	  "height": 32,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c4.png",
+	  "name": "Cloud",
+	  "width": 100,
+	  "height": 36,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c5.png",
+	  "name": "Cloud",
+	  "width": 150,
+	  "height": 55,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c6.png",
+	  "name": "Cloud",
+	  "width": 75,
+	  "height": 27,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c7.png",
+	  "name": "Cloud",
+	  "width": 100,
+	  "height": 19,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c8.png",
+	  "name": "Cloud",
+	  "width": 150,
+	  "height": 29,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c9.png",
+	  "name": "Cloud",
+	  "width": 75,
+	  "height": 15,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    },
+	{
+      "texture": "c10.png",
+	  "name": "Cloud",
+	  "width": 400,
+	  "height": 22,
+	  "fn": 1,
+	  "fps": 1,
+	  "frames": {"move": [1]},
+	  "speed": 2,
+	  "anim": true
+    }
+	]
+}

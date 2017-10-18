@@ -1,0 +1,38 @@
+[
+	{
+    "texture": "b1.png",
+		"id": 1
+    },
+    {
+      	"texture": "b2.png",
+		"id": 2
+    },
+    {
+      	"texture": "b3.png",
+		"id": 3
+    },
+    {
+      	"texture": "b4.png",
+		"id": 4
+    },
+    {
+      	"texture": "b5.png",
+		"id": 5
+    },
+    {
+      	"texture": "b6.png",
+		"id": 6
+    },
+    {
+      	"texture": "b7.png",
+		"id": 7
+    },
+    {
+      	"texture": "b8.png",
+		"id": 8
+    },
+    {
+      	"texture": "b9.png",
+		"id": 9
+    }
+]

@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{9E8F9D6D-C458-45C6-A780-F1B47D72BF47}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Adventure\AdventureBrickRepository.js">
+      <DependentUpon>AdventureBrickRepository.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\AdventureBrickRepository.ts" />
+    <TypeScriptCompile Include="Adventure\AdventureScene.ts" />
+    <Content Include="Adventure\AdventureScene.js">
+      <DependentUpon>AdventureScene.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Common\AdventureContact.js">
+      <DependentUpon>AdventureContact.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Common\AdventureContact.ts" />
+    <Content Include="Adventure\Common\AdventurePhysics.js">
+      <DependentUpon>AdventurePhysics.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Common\AdventurePhysics.ts" />
+    <Content Include="Adventure\LevelReader.js">
+      <DependentUpon>LevelReader.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\LevelReader.ts" />
+    <Content Include="Adventure\Objects\AdventureBrick.js">
+      <DependentUpon>AdventureBrick.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\AdventureBrick.ts" />
+    <Content Include="Adventure\Objects\AdventurePlayer.js">
+      <DependentUpon>AdventurePlayer.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\AdventurePlayer.ts" />
+    <TypeScriptCompile Include="Adventure\Objects\BigMama.ts" />
+    <Content Include="Adventure\Objects\BigMama.js">
+      <DependentUpon>BigMama.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\DynamicRopeSensor.js">
+      <DependentUpon>DynamicRopeSensor.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\DynamicRopeSensor.ts" />
+    <Content Include="Adventure\Objects\Hammer.js">
+      <DependentUpon>Hammer.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\Hammer.ts" />
+    <Content Include="Adventure\Objects\Pulley.js">
+      <DependentUpon>Pulley.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\Pulley.ts" />
+    <Content Include="Adventure\Objects\Rope.js">
+      <DependentUpon>Rope.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\Rope.ts" />
+    <Content Include="Adventure\Objects\Star.js">
+      <DependentUpon>Star.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\Objects\Star.ts" />
+    <Content Include="Adventure\PackLevels.js">
+      <DependentUpon>PackLevels.ts</DependentUpon>
+    </Content>
+    <Content Include="Adventure\PackLevels.ts" />
+    <Content Include="box2dweb-min.d.ts" />
+    <Content Include="Box2dWeb.min.js" />
+    <TypeScriptCompile Include="ThirdParty\Stats.d.ts" />
+    <TypeScriptCompile Include="Common\Animation.ts" />
+    <Content Include="Common\Animation.js">
+      <DependentUpon>Animation.ts</DependentUpon>
+    </Content>
+    <Content Include="Common\Animation.min.js">
+      <DependentUpon>Animation.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Common\Camera.ts" />
+    <Content Include="Common\Camera.js">
+      <DependentUpon>Camera.ts</DependentUpon>
+    </Content>
+    <Content Include="Common\Contact.js">
+      <DependentUpon>Contact.ts</DependentUpon>
+    </Content>
+    <Content Include="Common\Contact.min.js">
+      <DependentUpon>Contact.ts</DependentUpon>
+    </Content>
+    <Content Include="Common\Contact.ts" />
+    <TypeScriptCompile Include="Framework\GameTime.ts" />
+    <TypeScriptCompile Include="Common\SoundManager.ts" />
+    <Content Include="Common\SoundManager.js">
+      <DependentUpon>SoundManager.ts</DependentUpon>
+    </Content>
+    <Content Include="Content\019_Field02.mp3" />
+    <Content Include="Content\019_Field02.ogg" />
+    <Content Include="Content\1.png" />
+    <Content Include="Content\10.png" />
+    <Content Include="Content\2.png" />
+    <Content Include="Content\3.png" />
+    <Content Include="Content\4.png" />
+    <Content Include="Content\5.png" />
+    <Content Include="Content\6.png" />
+    <Content Include="Content\7.png" />
+    <Content Include="Content\8.png" />
+    <Content Include="Content\9.png" />
+    <Content Include="Content\9ofaRe.png" />
+    <Content Include="Content\about.png" />
+    <Content Include="Content\arrowBackSheet1.png" />
+    <Content Include="Content\b1.png" />
+    <Content Include="Content\b2.png" />
+    <Content Include="Content\b3.png" />
+    <Content Include="Content\b4.png" />
+    <Content Include="Content\b5.png" />
+    <Content Include="Content\b6.png" />
+    <Content Include="Content\b7.png" />
+    <Content Include="Content\b8.png" />
+    <Content Include="Content\b9.png" />
+    <Content Include="Content\backBtn.png" />
+    <Content Include="Content\backGroundMusic.mp3" />
+    <Content Include="Content\backGroundMusic.ogg" />
+    <Content Include="Content\backPack1.png" />
+    <Content Include="Content\bannerBack.png" />
+    <Content Include="Content\bannerFront.png" />
+    <Content Include="Content\blueBon.png" />
+    <Content Include="Content\c1.png" />
+    <Content Include="Content\c10.png" />
+    <Content Include="Content\c2.png" />
+    <Content Include="Content\c3.png" />
+    <Content Include="Content\c4.png" />
+    <Content Include="Content\c5.png" />
+    <Content Include="Content\c6.png" />
+    <Content Include="Content\c7.png" />
+    <Content Include="Content\c8.png" />
+    <Content Include="Content\c9.png" />
+    <Content Include="Content\canA.png" />
+    <Content Include="Content\canB.png" />
+    <Content Include="Content\canF.png" />
+    <Content Include="Content\cb.png" />
+    <Content Include="Content\cbBlured.png" />
+    <Content Include="Content\cbMenu1.png" />
+    <Content Include="Content\cbMenu2.png" />
+    <Content Include="Content\Clear.png" />
+    <Content Include="Content\CPBullet.png" />
+    <Content Include="Content\dialog.png" />
+    <Content Include="Content\bamboo1.png" />
+    <Content Include="Content\box01.png" />
+    <Content Include="Content\char.png" />
+    <Content Include="Content\dah2.png" />
+    <Content Include="Content\darthvader.png" />
+    <Content Include="Content\FF.png" />
+    <Content Include="Content\flyFuzzM.png" />
+    <Content Include="Content\ForIsText.png" />
+    <Content Include="Content\GameOver.png" />
+    <Content Include="Content\golbez.png" />
+    <Content Include="Content\GreenForest2Adv.png" />
+    <Content Include="Content\hammerBtn.png" />
+    <Content Include="Content\Hay1.png" />
+    <Content Include="Content\inGamePauseMenu.png" />
+    <Content Include="Content\islandSheet1.png" />
+    <Content Include="Content\lo7a01.png" />
+    <Content Include="Content\lo7a04-2.png" />
+    <Content Include="Content\lo7a04.png" />
+    <Content Include="Content\GoopTitle.png" />
+    <Content Include="Content\lo7a05.png" />
+    <Content Include="Content\lo7a06.png" />
+    <Content Include="Content\lo7a07.png" />
+    <Content Include="Content\lo7a08.png" />
+    <Content Include="Content\lock.png" />
+    <Content Include="Content\lvlmenuBtn.png" />
+    <Content Include="Content\lvls.png" />
+    <Content Include="Content\lvlsHighlight.png" />
+    <Content Include="Content\lvlsLocked.png" />
+    <Content Include="Content\menu.png" />
+    <Content Include="Content\menuBg.png" />
+    <Content Include="Content\menuPlanc.png" />
+    <Content Include="Content\Mo7Sa7-min.png" />
+    <Content Include="Content\Mo7Sa7.png" />
+    <Content Include="Content\MouseHammer.png" />
+    <Content Include="Content\msks.png" />
+    <Content Include="Content\nextBtn.png" />
+    <Content Include="Content\pauseBtnSmall.png" />
+    <Content Include="Content\pinkBigMama.png" />
+    <Content Include="Content\playBtn.png" />
+    <Content Include="Content\player.png" />
+    <Content Include="Content\popupGO.png" />
+    <Content Include="Content\pulleyRe.png" />
+    <Content Include="Content\redBon.png" />
+    <Content Include="Content\replay.png" />
+    <Content Include="Content\replayBtn.png" />
+    <Content Include="Content\rock01.png" />
+    <Content Include="Content\rock03.png" />
+    <Content Include="Content\rock04.png" />
+    <Content Include="Content\rock05.png" />
+    <Content Include="Content\rockm.png" />
+    <Content Include="Content\ropeBody.png" />
+    <Content Include="Content\score.png" />
+    <Content Include="Content\sensorCircleB.png" />
+    <Content Include="Content\sensorSmall.png" />
+    <Content Include="Content\starSheet1.png" />
+    <Content Include="Content\Start-hover.png" />
+    <Content Include="Content\start.png" />
+    <Content Include="Content\numbers.png" />
+    <Content Include="Content\SmokeWhite.png" />
+    <Content Include="Content\spritesheet.png" />
+    <TypeScriptCompile Include="Element\Cell.ts" />
+    <TypeScriptCompile Include="Element\Active.ts" />
+    <Content Include="Content\Survival.png" />
+    <Content Include="Content\tronc01.png" />
+    <Content Include="Content\vsurfer.png" />
+    <Content Include="Element\Active.js">
+      <DependentUpon>Active.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Element\Inactive.ts" />
+    <TypeScriptCompile Include="Element\Boss.ts" />
+    <TypeScriptCompile Include="Element\Bonus.ts" />
+    <Content Include="Element\Bonus.js">
+      <DependentUpon>Bonus.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Element\Bonuses\JumpBonus.ts" />
+    <TypeScriptCompile Include="Element\Bonuses\BrickProtectionBonus.ts" />
+    <Content Include="Element\Bonuses\BrickProtectionBonus.js">
+      <DependentUpon>BrickProtectionBonus.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Bonuses\JumpBonus.js">
+      <DependentUpon>JumpBonus.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Boss.js">
+      <DependentUpon>Boss.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Element\Brick.ts" />
+    <Content Include="Element\Brick.js">
+      <DependentUpon>Brick.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Bullet.js">
+      <DependentUpon>Bullet.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Bullet.ts" />
+    <Content Include="Element\Cannon.js">
+      <DependentUpon>Cannon.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Cannon.ts" />
+    <Content Include="Element\Cell.js">
+      <DependentUpon>Cell.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Element\Enemy.ts" />
+    <Content Include="Element\Enemy.js">
+      <DependentUpon>Enemy.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Inactive.js">
+      <DependentUpon>Inactive.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Element\Player.ts" />
+    <TypeScriptCompile Include="Element\Mobile.ts" />
+    <Content Include="Element\Mobile.js">
+      <DependentUpon>Mobile.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Player.js">
+      <DependentUpon>Player.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Framework\ContentManager.ts" />
+    <TypeScriptCompile Include="Element\Soldier.ts" />
+    <Content Include="Element\Soldier.js">
+      <DependentUpon>Soldier.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Element\Static.ts" />
+    <Content Include="Element\Static.js">
+      <DependentUpon>Static.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\ContentManager.js">
+      <DependentUpon>ContentManager.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameTime.js">
+      <DependentUpon>GameTime.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Interfaces\IAnimation.ts" />
+    <Content Include="Framework\GameTime.min.js">
+      <DependentUpon>GameTime.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Framework\Loader.ts" />
+    <TypeScriptCompile Include="Framework\Input\Mouse.ts" />
+    <TypeScriptCompile Include="Framework\Input\Keyboard.ts" />
+    <Content Include="Framework\Input\Keyboard.js">
+      <DependentUpon>Keyboard.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Framework\Input\KeyboardState.ts" />
+    <Content Include="Framework\Input\KeyboardState.js">
+      <DependentUpon>KeyboardState.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Input\Mouse.js">
+      <DependentUpon>Mouse.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Framework\Input\MouseState.ts" />
+    <Content Include="Framework\Input\MouseState.js">
+      <DependentUpon>MouseState.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Framework\IWindow.ts" />
+    <Content Include="Framework\IWindow.js">
+      <DependentUpon>IWindow.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Loader.js">
+      <DependentUpon>Loader.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\GameScene.ts" />
+    <TypeScriptCompile Include="GameCore\BricksGenerator.ts" />
+    <TypeScriptCompile Include="GameCore\ActionScene.ts" />
+    <Content Include="GameCore\ActionScene.js">
+      <DependentUpon>ActionScene.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\BackgroundGenerator.ts" />
+    <TypeScriptCompile Include="GameCore\AdventurePauseScene.ts" />
+    <Content Include="GameCore\AdventurePauseScene.js">
+      <DependentUpon>AdventurePauseScene.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\BackgroundGenerator.js">
+      <DependentUpon>BackgroundGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\BricksGenerator.js">
+      <DependentUpon>BricksGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\BulletGenerator.js">
+      <DependentUpon>BulletGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\BulletGenerator.ts" />
+    <TypeScriptCompile Include="GameCore\Controller.ts" />
+    <Content Include="GameCore\Controller.js">
+      <DependentUpon>Controller.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\Controls\Button.ts" />
+    <Content Include="GameCore\Controls\Button.js">
+      <DependentUpon>Button.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\EffectGenerator.js">
+      <DependentUpon>EffectGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\EffectGenerator.ts" />
+    <Content Include="GameCore\EnemyGenerator.js">
+      <DependentUpon>EnemyGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\EnemyGenerator.ts" />
+    <TypeScriptCompile Include="GameCore\EventAggregator.ts" />
+    <TypeScriptCompile Include="GameCore\EnvironmentGenerator.ts" />
+    <Content Include="GameCore\EnvironmentGenerator.js">
+      <DependentUpon>EnvironmentGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\EventAggregator.js">
+      <DependentUpon>EventAggregator.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\Events\CellDispose.ts" />
+    <TypeScriptCompile Include="GameCore\Events\CameraMove.ts" />
+    <TypeScriptCompile Include="GameCore\Events\ButtonAction.ts" />
+    <TypeScriptCompile Include="GameCore\Events\AdventureLevelDone.ts" />
+    <Content Include="GameCore\Events\AdventureLevelDone.js">
+      <DependentUpon>AdventureLevelDone.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Events\AdventureRemoveFromComponent.js">
+      <DependentUpon>AdventureRemoveFromComponent.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Events\AdventureRemoveFromComponent.ts" />
+    <Content Include="GameCore\Events\ButtonAction.js">
+      <DependentUpon>ButtonAction.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Events\CameraMove.js">
+      <DependentUpon>CameraMove.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Events\CellDispose.js">
+      <DependentUpon>CellDispose.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\Events\GamePaused.ts" />
+    <TypeScriptCompile Include="GameCore\Events\GameOver.ts" />
+    <Content Include="GameCore\Events\GameOver.js">
+      <DependentUpon>GameOver.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Events\GamePaused.js">
+      <DependentUpon>GamePaused.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\Events\ShowPopup.ts" />
+    <TypeScriptCompile Include="GameCore\Events\HidePopup.ts" />
+    <Content Include="GameCore\Events\HidePopup.js">
+      <DependentUpon>HidePopup.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\Events\PlayScene.ts" />
+    <Content Include="GameCore\Events\PlayScene.js">
+      <DependentUpon>PlayScene.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Events\RopeCutted.js">
+      <DependentUpon>RopeCutted.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Events\RopeCutted.ts" />
+    <Content Include="GameCore\Events\ShowPopup.js">
+      <DependentUpon>ShowPopup.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\GameScene.js">
+      <DependentUpon>GameScene.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\MenuComponent.ts" />
+    <Content Include="GameCore\MenuComponent.js">
+      <DependentUpon>MenuComponent.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\PopupDialog.ts" />
+    <TypeScriptCompile Include="GameCore\PauseScene.ts" />
+    <Content Include="GameCore\PauseScene.js">
+      <DependentUpon>PauseScene.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\PopupDialog.js">
+      <DependentUpon>PopupDialog.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="GameCore\PopupScene.ts" />
+    <TypeScriptCompile Include="GameCore\PopupDialogs\GameOverPopup.ts" />
+    <TypeScriptCompile Include="GameCore\PopupDialogs\AdventureClearPopup.ts" />
+    <Content Include="GameCore\PopupDialogs\AdventureClearPopup.js">
+      <DependentUpon>AdventureClearPopup.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\PopupDialogs\GameOverPopup.js">
+      <DependentUpon>GameOverPopup.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\PopupScene.js">
+      <DependentUpon>PopupScene.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Score.js">
+      <DependentUpon>Score.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Score.ts" />
+    <TypeScriptCompile Include="GameCore\StartScene.ts" />
+    <Content Include="GameCore\StartScene.js">
+      <DependentUpon>StartScene.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\StaticGenerator.js">
+      <DependentUpon>StaticGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\StaticGenerator.ts" />
+    <Content Include="Goop.min.js">
+      <DependentUpon>Goop.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Interfaces\IActive.ts" />
+    <Content Include="Interfaces\IActive.js">
+      <DependentUpon>IActive.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IAnimation.js">
+      <DependentUpon>IAnimation.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IAnimation.min.js">
+      <DependentUpon>IAnimation.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IContact.js">
+      <DependentUpon>IContact.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IContact.min.js">
+      <DependentUpon>IContact.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IContact.ts" />
+    <TypeScriptCompile Include="Interfaces\IPlayer.ts" />
+    <TypeScriptCompile Include="Interfaces\IEnemy.ts" />
+    <Content Include="Interfaces\IEnemy.js">
+      <DependentUpon>IEnemy.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Interfaces\IEventAggregator.ts" />
+    <Content Include="Interfaces\IEventAggregator.js">
+      <DependentUpon>IEventAggregator.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Interfaces\IListener.ts" />
+    <Content Include="Interfaces\IListener.js">
+      <DependentUpon>IListener.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\INail.ts" />
+    <Content Include="Interfaces\IPlayer.js">
+      <DependentUpon>IPlayer.ts</DependentUpon>
+    </Content>
+    <Content Include="ThirdParty\Stats.js" />
+    <TypeScriptCompile Include="Element\Entity.ts" />
+    <Content Include="Content\bar.png" />
+    <Content Include="Element\Entity.js">
+      <DependentUpon>Entity.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Entity.min.js">
+      <DependentUpon>Entity.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameComponent.min.js">
+      <DependentUpon>GameComponent.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Interfaces\IBody.ts" />
+    <Content Include="Interfaces\IBody.js">
+      <DependentUpon>IBody.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Interfaces\IPhysics.ts" />
+    <Content Include="Interfaces\IBody.min.js">
+      <DependentUpon>IBody.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Interfaces\IEntity.ts" />
+    <Content Include="Interfaces\IEntity.js">
+      <DependentUpon>IEntity.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IEntity.min.js">
+      <DependentUpon>IEntity.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IPhysics.js">
+      <DependentUpon>IPhysics.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IPhysics.min.js">
+      <DependentUpon>IPhysics.ts</DependentUpon>
+    </Content>
+    <Content Include="Launcher.js">
+      <DependentUpon>Launcher.ts</DependentUpon>
+    </Content>
+    <Content Include="Launcher.min.js">
+      <DependentUpon>Launcher.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Launcher.ts" />
+    <TypeScriptCompile Include="Common\Physics.ts" />
+    <Content Include="Common\Physics.js">
+      <DependentUpon>Physics.ts</DependentUpon>
+    </Content>
+    <Content Include="Common\Physics.min.js">
+      <DependentUpon>Physics.ts</DependentUpon>
+    </Content>
+    <Content Include="default.htm" />
+    <Content Include="Framework\DrawableGameComponent.js">
+      <DependentUpon>DrawableGameComponent.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\DrawableGameComponent.min.js">
+      <DependentUpon>DrawableGameComponent.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\DrawableGameComponent.ts" />
+    <Content Include="Framework\Game.js">
+      <DependentUpon>Game.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Game.min.js">
+      <DependentUpon>Game.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Game.ts" />
+    <Content Include="Framework\GameComponent.js">
+      <DependentUpon>GameComponent.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameComponent.ts" />
+    <Content Include="Framework\GameComponentArray.js">
+      <DependentUpon>GameComponentArray.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameComponentArray.min.js">
+      <DependentUpon>GameComponentArray.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameComponentArray.ts" />
+    <Content Include="Framework\GameService.js">
+      <DependentUpon>GameService.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameService.min.js">
+      <DependentUpon>GameService.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameService.ts" />
+    <Content Include="Framework\IDrawable.ts" />
+    <Content Include="Framework\IGame.js">
+      <DependentUpon>IGame.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\IGame.min.js">
+      <DependentUpon>IGame.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\IGame.ts" />
+    <Content Include="Framework\IGameComponent.ts" />
+    <Content Include="Framework\IServiceProvider.js">
+      <DependentUpon>IServiceProvider.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\IServiceProvider.min.js">
+      <DependentUpon>IServiceProvider.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\IServiceProvider.ts" />
+    <Content Include="Framework\IUpdateable.ts" />
+    <Content Include="Goop.js">
+      <DependentUpon>Goop.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Goop.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Physics.js.map">
+      <DependentUpon>Physics.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\DrawableGameComponent.js.map">
+      <DependentUpon>DrawableGameComponent.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Game.js.map">
+      <DependentUpon>Game.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameComponent.js.map">
+      <DependentUpon>GameComponent.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameComponentArray.js.map">
+      <DependentUpon>GameComponentArray.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameService.js.map">
+      <DependentUpon>GameService.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\IGame.js.map">
+      <DependentUpon>IGame.ts</DependentUpon>
+    </Content>
+    <Content Include="Goop.js.map">
+      <DependentUpon>Goop.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Framework\IServiceProvider.js.map">
+      <DependentUpon>IServiceProvider.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Launcher.js.map">
+      <DependentUpon>Launcher.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IPhysics.js.map">
+      <DependentUpon>IPhysics.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IBody.js.map">
+      <DependentUpon>IBody.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IEntity.js.map">
+      <DependentUpon>IEntity.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Element\Entity.js.map">
+      <DependentUpon>Entity.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Animation.js.map">
+      <DependentUpon>Animation.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\GameTime.js.map">
+      <DependentUpon>GameTime.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Contact.js.map">
+      <DependentUpon>Contact.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IAnimation.js.map">
+      <DependentUpon>IAnimation.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IContact.js.map">
+      <DependentUpon>IContact.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Element\Active.js.map">
+      <DependentUpon>Active.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IPlayer.js.map">
+      <DependentUpon>IPlayer.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IActive.js.map">
+      <DependentUpon>IActive.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Element\Player.js.map">
+      <DependentUpon>Player.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Element\Inactive.js.map">
+      <DependentUpon>Inactive.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Element\Cell.js.map">
+      <DependentUpon>Cell.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Camera.js.map">
+      <DependentUpon>Camera.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Boss.js.map">
+      <DependentUpon>Boss.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Brick.js.map">
+      <DependentUpon>Brick.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Enemy.js.map">
+      <DependentUpon>Enemy.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Mobile.js.map">
+      <DependentUpon>Mobile.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Soldier.js.map">
+      <DependentUpon>Soldier.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Static.js.map">
+      <DependentUpon>Static.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\ContentManager.js.map">
+      <DependentUpon>ContentManager.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Input\Keyboard.js.map">
+      <DependentUpon>Keyboard.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Input\KeyboardState.js.map">
+      <DependentUpon>KeyboardState.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Input\Mouse.js.map">
+      <DependentUpon>Mouse.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Input\MouseState.js.map">
+      <DependentUpon>MouseState.ts</DependentUpon>
+    </Content>
+    <Content Include="Framework\Loader.js.map">
+      <DependentUpon>Loader.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\GameScene.js.map">
+      <DependentUpon>GameScene.ts</DependentUpon>
+    </Content>
+    <Content Include="Interfaces\IEnemy.js.map">
+      <DependentUpon>IEnemy.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\objects.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bonuses.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bosses.json" />
+    <Content Include="Content\soldiers.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Element\Bonus.js.map">
+      <DependentUpon>Bonus.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Bonuses\BrickProtectionBonus.js.map">
+      <DependentUpon>BrickProtectionBonus.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Bonuses\JumpBonus.js.map">
+      <DependentUpon>JumpBonus.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Bullet.js.map">
+      <DependentUpon>Bullet.ts</DependentUpon>
+    </Content>
+    <Content Include="Element\Cannon.js.map">
+      <DependentUpon>Cannon.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\BricksGenerator.js.map">
+      <DependentUpon>BricksGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\BulletGenerator.js.map">
+      <DependentUpon>BulletGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\EnemyGenerator.js.map">
+      <DependentUpon>EnemyGenerator.ts</DependentUpon>
+    </Content>
+    <Content Include="GameCore\Score.js.map">
+      <DependentUpon>Score.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Menu\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\StartScene.js.map">
+      <DependentUpon>StartScene.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\EventAggregator.js.map">
+      <DependentUpon>EventAggregator.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\MenuComponent.js.map">
+      <DependentUpon>MenuComponent.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IEventAggregator.js.map">
+      <DependentUpon>IEventAggregator.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\CellDispose.js.map">
+      <DependentUpon>CellDispose.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\IListener.js.map">
+      <DependentUpon>IListener.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Controller.js.map">
+      <DependentUpon>Controller.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\ActionScene.js.map">
+      <DependentUpon>ActionScene.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\StaticGenerator.js.map">
+      <DependentUpon>StaticGenerator.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Environment.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\PopupDialogs\GameOverPopup.js.map">
+      <DependentUpon>GameOverPopup.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\HidePopup.js.map">
+      <DependentUpon>HidePopup.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Controls\Button.js.map">
+      <DependentUpon>Button.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\PopupScene.js.map">
+      <DependentUpon>PopupScene.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\EnvironmentGenerator.js.map">
+      <DependentUpon>EnvironmentGenerator.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\CameraMove.js.map">
+      <DependentUpon>CameraMove.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\ShowPopup.js.map">
+      <DependentUpon>ShowPopup.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Framework\IWindow.js.map">
+      <DependentUpon>IWindow.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\GamePaused.js.map">
+      <DependentUpon>GamePaused.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\GameOver.js.map">
+      <DependentUpon>GameOver.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\PopupDialog.js.map">
+      <DependentUpon>PopupDialog.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\ButtonAction.js.map">
+      <DependentUpon>ButtonAction.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\effects.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\backgrounds.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\PauseScene.js.map">
+      <DependentUpon>PauseScene.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\EffectGenerator.js.map">
+      <DependentUpon>EffectGenerator.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\Events\PlayScene.js.map">
+      <DependentUpon>PlayScene.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\SoundManager.js.map">
+      <DependentUpon>SoundManager.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameCore\BackgroundGenerator.js.map">
+      <DependentUpon>BackgroundGenerator.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\level-2.json" />
+    <Content Include="Content\packLevels.json" />
+    <Content Include="Content\packs.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\level-1.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TheGoops</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24602/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptIncludeComments>false</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
+</Project>

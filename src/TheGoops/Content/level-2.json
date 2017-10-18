@@ -1,0 +1,65 @@
+﻿{"Options": {"background": "GreenForest2Adv.png", "hammer": 4}, 
+"Objects":
+[
+	{
+		"object": 0,
+		"width": 600,
+		"height": 10,
+		"x": 10,
+		"y": 400,
+		"type": "static"
+	},
+	{
+		"object": 2,
+		"x": 300,
+		"y": 50,
+		"length": 200
+	},
+	{
+		"object": 0,
+		"width": 50,
+		"height": 10,
+		"x": 250,
+		"y": 100,
+		"type": "dynamic"
+	},
+	{
+		"object": 3,
+		"x": 400,
+		"y": 50,
+		"radius": 3
+	},
+	{
+		"object": 3,
+		"x": 500,
+		"y": 200,
+		"radius": 3
+	},
+	{
+		"object": 5,
+		"x": 350,
+		"y": 130
+	},
+	{
+		"object": 4,
+		"x": 420,
+		"y": 140
+	},
+	{
+		"object": 4,
+		"x": 500,
+		"y": 310
+	},
+	{
+		"object": 6,
+		"x": 250,
+		"y": 80,
+		"type": 0
+	},
+	{
+		"object": 7,
+		"x": 350,
+		"y": 300
+	}
+]
+}

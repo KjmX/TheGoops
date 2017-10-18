@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Goop</title>
+    <script type="text/javascript" src="Framework/GameComponent.js"></script>
+    <script type="text/javascript" src="Framework/DrawableGameComponent.js"></script>
+    <script type="text/javascript" src="Framework/GameComponentArray.js"></script>
+    <script type="text/javascript" src="Framework/GameService.js"></script>
+    <script type="text/javascript" src="Framework/GameTime.js"></script>
+    <script type="text/javascript" src="Framework/ContentManager.js"></script>
+    <script type="text/javascript" src="Framework/Loader.js"></script>
+    <script type="text/javascript" src="Framework/Input/Mouse.js"></script>
+    <script type="text/javascript" src="Framework/Input/MouseState.js"></script>
+    <script type="text/javascript" src="Framework/Input/Keyboard.js"></script>
+    <script type="text/javascript" src="Framework/Input/KeyboardState.js"></script>
+    <script type="text/javascript" src="Framework/Game.js"></script>
+    <script type="text/javascript" src="Goop.js"></script>
+    <script type="text/javascript" src="Common/Physics.js"></script>
+    <script type="text/javascript" src="Element/Entity.js"></script>
+    <script type="text/javascript" src="Common/Animation.js"></script>
+    <script type="text/javascript" src="Common/Camera.js"></script>
+    <script type="text/javascript" src="Launcher.js"></script>
+    <script type="text/javascript" src="Box2dWeb.min.js"></script>
+    <script type="text/javascript" src="ThirdParty/Stats.js"></script>
+    <script type="text/javascript" src="Element/Cell.js"></script>
+    <script type="text/javascript" src="Element/Active.js"></script>
+    <script type="text/javascript" src="Element/Player.js"></script>
+    <script type="text/javascript" src="Element/Enemy.js"></script>
+    <script type="text/javascript" src="Element/Soldier.js"></script>
+    <script type="text/javascript" src="Element/Boss.js"></script>
+    <script type="text/javascript" src="Element/Bullet.js"></script>
+    <script type="text/javascript" src="Element/Cannon.js"></script>
+    <script type="text/javascript" src="Element/Inactive.js"></script>
+    <script type="text/javascript" src="Element/Static.js"></script>
+    <script type="text/javascript" src="Element/Mobile.js"></script>
+    <script type="text/javascript" src="Element/Brick.js"></script>
+    <script type="text/javascript" src="Element/Bonus.js"></script>
+    <script type="text/javascript" src="Element/Bonuses/JumpBonus.js"></script>
+    <script type="text/javascript" src="Element/Bonuses/BrickProtectionBonus.js"></script>
+    <script type="text/javascript" src="GameCore/BulletGenerator.js"></script>
+    <script type="text/javascript" src="GameCore/BricksGenerator.js"></script>
+    <script type="text/javascript" src="GameCore/EnemyGenerator.js"></script>
+    <script type="text/javascript" src="GameCore/Score.js"></script>
+    <script type="text/javascript" src="Common/Contact.js"></script>
+    <script type="text/javascript" src="GameCore/GameScene.js"></script>
+    <script type="text/javascript" src="GameCore/StartScene.js"></script>
+    <script type="text/javascript" src="GameCore/ActionScene.js"></script>
+    <script type="text/javascript" src="GameCore/MenuComponent.js"></script>
+    <script type="text/javascript" src="GameCore/EventAggregator.js"></script>
+    <script type="text/javascript" src="GameCore/Events/CellDispose.js"></script>
+    <script type="text/javascript" src="GameCore/Events/GamePaused.js"></script>
+    <script type="text/javascript" src="GameCore/Events/CameraMove.js"></script>
+    <script type="text/javascript" src="GameCore/Events/ButtonAction.js"></script>
+    <script type="text/javascript" src="GameCore/Controller.js"></script>
+    <script type="text/javascript" src="GameCore/StaticGenerator.js"></script>
+    <script type="text/javascript" src="GameCore/EnvironmentGenerator.js"></script>
+    <script type="text/javascript" src="GameCore/PopupDialog.js"></script>
+    <script type="text/javascript" src="GameCore/Controls/Button.js"></script>
+    <script type="text/javascript" src="GameCore/PopupScene.js"></script>
+    <script type="text/javascript" src="GameCore/PopupDialogs/GameOverPopup.js"></script>
+    <script type="text/javascript" src="GameCore/Events/ShowPopup.js"></script>
+    <script type="text/javascript" src="GameCore/Events/HidePopup.js"></script>
+    <script type="text/javascript" src="GameCore/Events/GameOver.js"></script>
+    <script type="text/javascript" src="GameCore/Events/PlayScene.js"></script>
+    <script type="text/javascript" src="GameCore/EffectGenerator.js"></script>
+    <script type="text/javascript" src="GameCore/PauseScene.js"></script>
+    <script type="text/javascript" src="GameCore/BackgroundGenerator.js"></script>
+    <script type="text/javascript" src="Common/SoundManager.js"></script>
+    <!--Adv-->
+    <script type="text/javascript" src="Adventure/AdventureScene.js"></script>
+    <script type="text/javascript" src="Adventure/PackLevels.js"></script>
+    <script type="text/javascript" src="Adventure/LevelReader.js"></script>
+    <script type="text/javascript" src="Adventure/Common/AdventurePhysics.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/Rope.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/Pulley.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/DynamicRopeSensor.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/AdventurePlayer.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/Star.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/AdventureBrick.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/Hammer.js"></script>
+    <script type="text/javascript" src="Adventure/Objects/BigMama.js"></script>
+    <script type="text/javascript" src="Adventure/Common/AdventureContact.js"></script>
+    <script type="text/javascript" src="Adventure/AdventureBrickRepository.js"></script>
+    <script type="text/javascript" src="GameCore/Events/AdventureRemoveFromComponent.js"></script>
+    <script type="text/javascript" src="GameCore/Events/RopeCutted.js"></script>
+    <script type="text/javascript" src="GameCore/Events/AdventureLevelDone.js"></script>
+    <script type="text/javascript" src="GameCore/PopupDialogs/AdventureClearPopup.js"></script>
+</head>
+<body>
+    <h1>Goop</h1>
+
+    <div id="content"></div>
+    
+    <p>
+        <input type="checkbox" id="cbDebugView"/> 
+        <label for="cbDebugView">DebugView</label>
+    </p>
+</body>
+</html>

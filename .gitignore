@@ -1,0 +1,13 @@
+src/$tf
+src/Goop.v11.suo
+src/Goop.vssscc
+src/TheGoops/bin
+src/TheGoops/obj
+src/TheGoops/Goop.csproj.user
+src/TheGoops/Goop.csproj.vspscc
+src/**/*.js
+src/**/*.min.js
+src/**/*.js.map
+!src/Box2dWeb.min.js
+!src/ThirdParty/Stats.js
+

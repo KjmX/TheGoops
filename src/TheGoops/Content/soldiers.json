@@ -1,0 +1,33 @@
+{
+	"lvl-1":[
+	 {
+		"texture": "cb.png",
+		"name": "CrazyBart",
+		"width": 53,
+		"height": 60,
+		"fn": 4,
+		"fps": 10,
+		"frames": [1,2,3,4]
+		}
+	],
+	"lvl-2":[
+	 {
+		"texture": "Rockm.png",
+		"name": "Rock",
+		"width": 58,
+		"height": 45,
+		"fn": 1,
+		"fps": 10,
+		"frames": []
+	},
+	{
+		"texture": "msks.png",
+		"name": "MissKiss",
+		"width": 58,
+		"height": 45,
+		"fn": 1,
+		"fps": 10,
+		"frames": []
+	}
+	]
+}

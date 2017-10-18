@@ -1,0 +1,157 @@
+{
+  "lvl-1": [
+    {
+      "texture": "lo7a01.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 30,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+    {
+      "texture": "lo7a05.png",
+	  "name": "Brick",
+	  "width": 50,
+	  "height": 50,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+    {
+      "texture": "lo7a06.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 20,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+    {
+      "texture": "lo7a07.png",
+	  "name": "Brick",
+	  "width": 120,
+	  "height": 30,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+    {
+      "texture": "lo7a08.png",
+	  "name": "Brick",
+	  "width": 120,
+	  "height": 20,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+	{
+      "texture": "tronc01.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 50,
+	  "health": 8,
+	  "fn": 4,
+	  "fps": 10,
+	  "frames": [[1], [2], [3], [4]]
+    },
+    {
+      "texture": "Hay1.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 40,
+	  "health": 4,
+	  "fn": 2,
+	  "fps": 10,
+	  "frames": [[1], [2]]
+    },
+    {
+      "texture": "rock01.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 30,
+	  "health": 8,
+	  "fn": 4,
+	  "fps": 10,
+	  "frames": [[1], [2], [3], [4]]
+    },
+    {
+      "texture": "rock03.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 20,
+	  "health": 8,
+	  "fn": 4,
+	  "fps": 10,
+	  "frames": [[1], [2], [3], [4]]
+    },
+    {
+      "texture": "rock04.png",
+	  "name": "Brick",
+	  "width": 120,
+	  "height": 20,
+	  "health": 8,
+	  "fn": 4,
+	  "fps": 10,
+	  "frames": [[1], [2], [3], [4]]
+    },
+    {
+      "texture": "rock05.png",
+	  "name": "Brick",
+	  "width": 120,
+	  "height": 30,
+	  "health": 8,
+	  "fn": 4,
+	  "fps": 10,
+	  "frames": [[1], [2], [3], [4]]
+    },
+	{
+      "texture": "bamboo1.png",
+	  "name": "Brick",
+	  "width": 100,
+	  "height": 20,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+    {
+      "texture": "lo7a04.png",
+	  "name": "Brick",
+	  "width": 75,
+	  "height": 75,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+    {
+      "texture": "lo7a04-2.png",
+	  "name": "Brick",
+	  "width": 75,
+	  "height": 75,
+	  "health": 6,
+	  "fn": 3,
+	  "fps": 10,
+	  "frames": [[1], [2], [3]]
+    },
+	{
+      "texture": "box01.png",
+	  "name": "Brick",
+	  "width": 50,
+	  "height": 50,
+	  "health": 4,
+	  "fn": 2,
+	  "fps": 10,
+	  "frames": [[1], [2]]
+    }
+  ],
+  "lvl-2": [
+	
+  ]
+}
