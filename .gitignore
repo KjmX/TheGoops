@@ -8,6 +8,6 @@ src/TheGoops/Goop.csproj.vspscc
 src/**/*.js
 src/**/*.min.js
 src/**/*.js.map
-!src/Box2dWeb.min.js
-!src/ThirdParty/Stats.js
+!src/TheGoops/Box2dWeb.min.js
+!src/TheGoops/ThirdParty/Stats.js
 
